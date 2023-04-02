@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(252, 250, 240);
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    width: auto;
+}
+
+article > h2{
+    padding-bottom: 20px;
+}
+
+.fade-in{
+    opacity: 0;
+    transition:  opacity 500ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+.loading-spinner {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-top-color: #3498db;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}  
+
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    min-width: 500px;
+    background-color: #b6b6b6;
+    min-height: 500px;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.content input{
+    color: #3d3d3d;
+    padding: 10px 10px;
+    border-radius: 8px;
+    margin: 5px;
+    border-color: rgb(138, 138, 138);
+    width: 93%;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: fit-content;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.cryp_img{
+    /* background-color: rgb(221, 221, 221); */
+    padding: 10px;
+    display: flex;
+}
+
+.cryp_img > img{
+    align-self: center;
+}
+
+.crypt_info > ul{
+    padding: 10px;
+    list-style-type: none;
+    border: solid 1px #ebebeb;
+}
+
+.crypt_info > ul li{
+    padding: 2px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body onload="getCrypt()">
+    
+    <article>
+        <h2>Wireframe</h2>
+        <div class="content">
+            <div>
+                <input id="search" type="text" name="search" value="" placeholder="Search" onchange="searchCrypto()">
+            </div>
+            <div class="result">
+                <div id="loading-spinner" class="loading-spinner"></div>
+            </div>
+        </div>
+    </article>
+    <script src="./index.js"></script>
+</body>
+</html>
